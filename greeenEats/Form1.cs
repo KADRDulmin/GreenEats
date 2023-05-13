@@ -16,5 +16,20 @@ namespace greeenEats
         {
             InitializeComponent();
         }
+
+        private void top_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2ControlBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
