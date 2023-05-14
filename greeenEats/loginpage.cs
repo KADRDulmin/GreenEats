@@ -10,36 +10,28 @@ using System.Windows.Forms;
 
 namespace greeenEats
 {
-    public partial class Form1 : Form
+    public partial class loginpage : Form
     {
-        public Form1()
+        public loginpage()
         {
             InitializeComponent();
         }
 
-        private void top_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void guna2ControlBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-
+            Form1 objhf= new Form1();
+            objhf.Show();
+            this.Hide();
         }
 
-        private void guna2Button3_Click(object sender, EventArgs e)
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }
