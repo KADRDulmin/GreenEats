@@ -42,6 +42,8 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.gunaRadarDataset1 = new Guna.Charts.WinForms.GunaRadarDataset();
+            this.gunaAreaDataset1 = new Guna.Charts.WinForms.GunaAreaDataset();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
@@ -152,11 +154,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Poppins ExtraBold", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.label1.Enabled = false;
+            this.label1.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.LimeGreen;
-            this.label1.Location = new System.Drawing.Point(-7, 72);
+            this.label1.Location = new System.Drawing.Point(10, 75);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(327, 80);
+            this.label1.Size = new System.Drawing.Size(303, 57);
             this.label1.TabIndex = 3;
             this.label1.Text = "GREEN EATS";
             this.label1.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -209,6 +212,18 @@
             this.guna2PictureBox2.TabStop = false;
             this.guna2PictureBox2.UseTransparentBackground = true;
             // 
+            // gunaRadarDataset1
+            // 
+            this.gunaRadarDataset1.BorderColor = System.Drawing.Color.Empty;
+            this.gunaRadarDataset1.FillColor = System.Drawing.Color.Empty;
+            this.gunaRadarDataset1.Label = "Radar1";
+            // 
+            // gunaAreaDataset1
+            // 
+            this.gunaAreaDataset1.BorderColor = System.Drawing.Color.Empty;
+            this.gunaAreaDataset1.FillColor = System.Drawing.Color.Empty;
+            this.gunaAreaDataset1.Label = "Area1";
+            // 
             // signupform
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -243,5 +258,7 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private System.Windows.Forms.Label label2;
+        private Guna.Charts.WinForms.GunaRadarDataset gunaRadarDataset1;
+        private Guna.Charts.WinForms.GunaAreaDataset gunaAreaDataset1;
     }
 }

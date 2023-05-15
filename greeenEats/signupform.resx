@@ -120,9 +120,6 @@
   <metadata name="guna2Elipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="guna2AnimateWindow1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>160, 17</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="guna2ImageButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -171,7 +168,7 @@
   <data name="guna2PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA+QAAAQuCAYAAABVifdNAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAA/7JJREFUeF7s/e3aLUtyFAjWZbcANdA9rW6GgZ6ZGxloCRAgmPuZqpLu4GjczN08
+        DAAACwwBP0AiyAAA/7JJREFUeF7s/e3aLUtyFAjWZbcANdA9rW6GgZ6ZGxloCRAgmPuZqpLu4GjczN08
         LDwj1lr7VAlV1Vk/7An/jsjM+HDPXPvdv/qffv3vfvqz3/z7n/7s1//u70lH+2f/v//PokvXMP6fuByQ
         bvj8k9/8+91uYtivcZSu9P9TjMvtBMSXT/sWyMvf6E1vvGSb/OBz85stafnbOByQs8X11TXiWlsP3wHd
         U9mQR3wba/uabJMf4M9q2m38iAlI73YdD8+yZISu2WXAsPOYj/gVo/mCX4Ow+R7GrvvueMQ2v9nnMeZA
@@ -11648,6 +11645,9 @@
         gg==
 </value>
   </data>
+  <metadata name="guna2AnimateWindow1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>160, 17</value>
+  </metadata>
   <data name="guna2PictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA+QAAAQuCAYAAABVifdNAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -23128,4 +23128,10 @@
         gg==
 </value>
   </data>
+  <metadata name="gunaRadarDataset1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>377, 17</value>
+  </metadata>
+  <metadata name="gunaAreaDataset1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>563, 17</value>
+  </metadata>
 </root>
