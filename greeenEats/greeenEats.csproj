@@ -42,6 +42,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Management" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
@@ -122,6 +123,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Category.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User_cicrle%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G.EATS1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GREEN EATS %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
