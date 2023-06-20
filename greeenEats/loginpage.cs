@@ -22,13 +22,6 @@ namespace greeenEats
 
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            Form1 objhf= new Form1();
-            objhf.Show();
-            this.Hide();
-        }
-
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
             this.Close();
