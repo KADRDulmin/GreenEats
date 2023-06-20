@@ -32,6 +32,12 @@ namespace greeenEats
 
         }
 
+        private void login_btn_Click(object sender, EventArgs e)
+        {
+            Form1 objhf = new Form1();
+            objhf.Show();
+            this.Hide();
 
+        }
     }
 }

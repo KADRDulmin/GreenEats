@@ -24,12 +24,29 @@ namespace greeenEats
 
         private void guna2HtmlLabel2_Click(object sender, EventArgs e)
         {
+            loginpage objl = new loginpage();
+            objl.Show();
+            this.Hide();
 
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void create_acc_btn_Click(object sender, EventArgs e)
+        {
+            loginpage objlog = new loginpage();
+            objlog.Show();
+            this.Hide();
+        }
+
+        private void create_acc_Click(object sender, EventArgs e)
+        {
+            signupform obj_signup = new signupform();
+            obj_signup.Show();
+            this.Close();
         }
     }
 }
