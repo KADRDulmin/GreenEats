@@ -3,6 +3,8 @@ using System.Windows.Forms;
 using System.Security.Cryptography;
 using System.Text;
 using MySql.Data.MySqlClient;
+using Microsoft.Extensions.Configuration;
+using System.IO;
 
 namespace greeenEats
 {
@@ -32,10 +34,15 @@ namespace greeenEats
 
             private void create_acc_Click(object sender, EventArgs e)
             {
-            string server = "sql12.freemysqlhosting.net";
-            string database = "sql12627644";
-            string username = "sql12627644";
-            string password = "1Fy4wseAi7";
+            IConfiguration configuration = new ConfigurationBuilder()
+                 .SetBasePath(Directory.GetCurrentDirectory())
+              .AddJsonFile("appsettings.json")
+                 .Build();
+
+            string server = configuration["Server"];
+            string database = configuration["Database"];
+            string username = configuration["Username"];
+            string password = configuration["Password"];
 
             MySQLConnector connector = new MySQLConnector(server, database, username, password);
 
