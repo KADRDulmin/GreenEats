@@ -10,6 +10,10 @@ using System;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Configuration;
+using System;
+using System.IO;
 
 namespace greeenEats
 {
@@ -22,6 +26,7 @@ namespace greeenEats
         static void Main()
 
         {
+           
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new signupform());
