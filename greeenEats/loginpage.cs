@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Security.Cryptography;
+using System.Text;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
@@ -16,6 +18,17 @@ namespace greeenEats
         {
             this.Close();
         }
+        private string HashPassword(string password)
+        {
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                byte[] passwordBytes = Encoding.UTF8.GetBytes(password);
+                byte[] hashBytes = sha256.ComputeHash(passwordBytes);
+                string hashedPassword = BitConverter.ToString(hashBytes).Replace("-", "").ToLower();
+                return hashedPassword;
+            }
+        }
+
 
         private void login_btn_Click(object sender, EventArgs e)
         {
@@ -33,7 +46,10 @@ namespace greeenEats
                 string enteredUsername = guna2TextBox1.Text;
                 string enteredPassword = guna2TextBox2.Text;
 
-                string query = $"SELECT COUNT(*) FROM users WHERE username = '{enteredUsername}' AND password = '{enteredPassword}'";
+                // Hash the entered password
+                string hashedPassword = HashPassword(enteredPassword);
+
+                string query = $"SELECT COUNT(*) FROM users WHERE username = '{enteredUsername}' AND password = '{hashedPassword}'";
 
                 MySqlCommand command = connector.CreateCommand(query);
                 int count = Convert.ToInt32(command.ExecuteScalar());
