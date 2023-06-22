@@ -34,7 +34,7 @@ namespace greeenEats
 
         private void login_btn_Click(object sender, EventArgs e)
         {
-            Form1 objhf = new Form1();
+            ChooseForm objhf = new ChooseForm();
             objhf.Show();
             this.Hide();
 
