@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(signup));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.signupAsStaff_btn = new Guna.UI2.WinForms.Guna2Button();
             this.create_acc = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -45,7 +46,6 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.signupAsStaff_btn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -74,6 +74,30 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(323, 500);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // signupAsStaff_btn
+            // 
+            this.signupAsStaff_btn.Animated = true;
+            this.signupAsStaff_btn.AutoRoundedCorners = true;
+            this.signupAsStaff_btn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.signupAsStaff_btn.BorderRadius = 14;
+            this.signupAsStaff_btn.BorderThickness = 2;
+            this.signupAsStaff_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.signupAsStaff_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.signupAsStaff_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.signupAsStaff_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.signupAsStaff_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.signupAsStaff_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.signupAsStaff_btn.ForeColor = System.Drawing.Color.White;
+            this.signupAsStaff_btn.HoverState.FillColor = System.Drawing.Color.ForestGreen;
+            this.signupAsStaff_btn.HoverState.ForeColor = System.Drawing.Color.White;
+            this.signupAsStaff_btn.IndicateFocus = true;
+            this.signupAsStaff_btn.Location = new System.Drawing.Point(166, 371);
+            this.signupAsStaff_btn.Name = "signupAsStaff_btn";
+            this.signupAsStaff_btn.Size = new System.Drawing.Size(124, 31);
+            this.signupAsStaff_btn.TabIndex = 25;
+            this.signupAsStaff_btn.Text = "Staff Account";
+            this.signupAsStaff_btn.Click += new System.EventHandler(this.signupAsStaff_btn_Click);
             // 
             // create_acc
             // 
@@ -179,7 +203,7 @@
             this.guna2TextBox3.Name = "guna2TextBox3";
             this.guna2TextBox3.PasswordChar = '\0';
             this.guna2TextBox3.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.guna2TextBox3.PlaceholderText = "Enter email";
+            this.guna2TextBox3.PlaceholderText = "Enter Your Email";
             this.guna2TextBox3.SelectedText = "";
             this.guna2TextBox3.Size = new System.Drawing.Size(258, 38);
             this.guna2TextBox3.TabIndex = 16;
@@ -204,7 +228,7 @@
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.guna2TextBox2.PlaceholderText = "Enter phone number ";
+            this.guna2TextBox2.PlaceholderText = "Enter Your Last Name";
             this.guna2TextBox2.SelectedText = "";
             this.guna2TextBox2.Size = new System.Drawing.Size(258, 38);
             this.guna2TextBox2.TabIndex = 15;
@@ -229,7 +253,7 @@
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.guna2TextBox1.PlaceholderText = "Create a username";
+            this.guna2TextBox1.PlaceholderText = "Enter Your First Name";
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.Size = new System.Drawing.Size(258, 38);
             this.guna2TextBox1.TabIndex = 14;
@@ -308,30 +332,6 @@
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
-            // 
-            // signupAsStaff_btn
-            // 
-            this.signupAsStaff_btn.Animated = true;
-            this.signupAsStaff_btn.AutoRoundedCorners = true;
-            this.signupAsStaff_btn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.signupAsStaff_btn.BorderRadius = 14;
-            this.signupAsStaff_btn.BorderThickness = 2;
-            this.signupAsStaff_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.signupAsStaff_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.signupAsStaff_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.signupAsStaff_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.signupAsStaff_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.signupAsStaff_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.signupAsStaff_btn.ForeColor = System.Drawing.Color.White;
-            this.signupAsStaff_btn.HoverState.FillColor = System.Drawing.Color.ForestGreen;
-            this.signupAsStaff_btn.HoverState.ForeColor = System.Drawing.Color.White;
-            this.signupAsStaff_btn.IndicateFocus = true;
-            this.signupAsStaff_btn.Location = new System.Drawing.Point(166, 371);
-            this.signupAsStaff_btn.Name = "signupAsStaff_btn";
-            this.signupAsStaff_btn.Size = new System.Drawing.Size(124, 31);
-            this.signupAsStaff_btn.TabIndex = 25;
-            this.signupAsStaff_btn.Text = "Staff Account";
-            this.signupAsStaff_btn.Click += new System.EventHandler(this.signupAsStaff_btn_Click);
             // 
             // signup
             // 

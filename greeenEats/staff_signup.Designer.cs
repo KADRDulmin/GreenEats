@@ -33,6 +33,7 @@ namespace greeenEats
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(staff_signup));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.staff_create_btn = new Guna.UI2.WinForms.Guna2Button();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -46,7 +47,6 @@ namespace greeenEats
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.staff_create_btn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -76,23 +76,47 @@ namespace greeenEats
             this.guna2Panel1.Size = new System.Drawing.Size(323, 450);
             this.guna2Panel1.TabIndex = 1;
             // 
+            // staff_create_btn
+            // 
+            this.staff_create_btn.Animated = true;
+            this.staff_create_btn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.staff_create_btn.BorderRadius = 8;
+            this.staff_create_btn.BorderThickness = 1;
+            this.staff_create_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.staff_create_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.staff_create_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.staff_create_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.staff_create_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.staff_create_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.staff_create_btn.ForeColor = System.Drawing.Color.White;
+            this.staff_create_btn.HoverState.FillColor = System.Drawing.Color.ForestGreen;
+            this.staff_create_btn.HoverState.ForeColor = System.Drawing.Color.White;
+            this.staff_create_btn.IndicateFocus = true;
+            this.staff_create_btn.Location = new System.Drawing.Point(32, 369);
+            this.staff_create_btn.Name = "staff_create_btn";
+            this.staff_create_btn.Size = new System.Drawing.Size(168, 31);
+            this.staff_create_btn.TabIndex = 25;
+            this.staff_create_btn.Text = "Create account";
+            this.staff_create_btn.Click += new System.EventHandler(this.staff_create_btn_Click);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.LimeGreen;
-            this.label3.Location = new System.Drawing.Point(124, 115);
+            this.label3.Location = new System.Drawing.Point(35, 92);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 23);
+            this.label3.Size = new System.Drawing.Size(131, 23);
             this.label3.TabIndex = 24;
-            this.label3.Text = "STAFF";
+            this.label3.Text = "STAFF SIGN UP";
             this.label3.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             this.label3.UseCompatibleTextRendering = true;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(32, 427);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(12, 425);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(158, 15);
             this.guna2HtmlLabel2.TabIndex = 21;
@@ -103,7 +127,6 @@ namespace greeenEats
             this.guna2TextBox5.Animated = true;
             this.guna2TextBox5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.guna2TextBox5.BorderRadius = 5;
-            this.guna2TextBox5.BorderThickness = 2;
             this.guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox5.DefaultText = "";
             this.guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -113,7 +136,7 @@ namespace greeenEats
             this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.Location = new System.Drawing.Point(32, 347);
+            this.guna2TextBox5.Location = new System.Drawing.Point(32, 323);
             this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.guna2TextBox5.Name = "guna2TextBox5";
             this.guna2TextBox5.PasswordChar = '*';
@@ -128,7 +151,6 @@ namespace greeenEats
             this.guna2TextBox4.Animated = true;
             this.guna2TextBox4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.guna2TextBox4.BorderRadius = 5;
-            this.guna2TextBox4.BorderThickness = 2;
             this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox4.DefaultText = "";
             this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -138,7 +160,7 @@ namespace greeenEats
             this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Location = new System.Drawing.Point(32, 298);
+            this.guna2TextBox4.Location = new System.Drawing.Point(32, 275);
             this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.guna2TextBox4.Name = "guna2TextBox4";
             this.guna2TextBox4.PasswordChar = '*';
@@ -153,7 +175,6 @@ namespace greeenEats
             this.guna2TextBox3.Animated = true;
             this.guna2TextBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.guna2TextBox3.BorderRadius = 5;
-            this.guna2TextBox3.BorderThickness = 2;
             this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox3.DefaultText = "";
             this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -163,12 +184,12 @@ namespace greeenEats
             this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(32, 248);
+            this.guna2TextBox3.Location = new System.Drawing.Point(32, 227);
             this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.guna2TextBox3.Name = "guna2TextBox3";
             this.guna2TextBox3.PasswordChar = '\0';
             this.guna2TextBox3.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.guna2TextBox3.PlaceholderText = "Enter email";
+            this.guna2TextBox3.PlaceholderText = "Enter Your Email";
             this.guna2TextBox3.SelectedText = "";
             this.guna2TextBox3.Size = new System.Drawing.Size(258, 38);
             this.guna2TextBox3.TabIndex = 16;
@@ -178,7 +199,6 @@ namespace greeenEats
             this.guna2TextBox2.Animated = true;
             this.guna2TextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.guna2TextBox2.BorderRadius = 5;
-            this.guna2TextBox2.BorderThickness = 2;
             this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox2.DefaultText = "";
             this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -188,12 +208,12 @@ namespace greeenEats
             this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(32, 198);
+            this.guna2TextBox2.Location = new System.Drawing.Point(32, 179);
             this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.guna2TextBox2.PlaceholderText = "Enter phone number ";
+            this.guna2TextBox2.PlaceholderText = "Enter Your Last Name";
             this.guna2TextBox2.SelectedText = "";
             this.guna2TextBox2.Size = new System.Drawing.Size(258, 38);
             this.guna2TextBox2.TabIndex = 15;
@@ -203,7 +223,6 @@ namespace greeenEats
             this.guna2TextBox1.Animated = true;
             this.guna2TextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.guna2TextBox1.BorderRadius = 5;
-            this.guna2TextBox1.BorderThickness = 2;
             this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox1.DefaultText = "";
             this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -213,12 +232,12 @@ namespace greeenEats
             this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(32, 150);
+            this.guna2TextBox1.Location = new System.Drawing.Point(32, 131);
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.guna2TextBox1.PlaceholderText = "Create a username";
+            this.guna2TextBox1.PlaceholderText = "Enter Your First Name";
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.Size = new System.Drawing.Size(258, 38);
             this.guna2TextBox1.TabIndex = 14;
@@ -257,7 +276,7 @@ namespace greeenEats
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.LimeGreen;
-            this.label1.Location = new System.Drawing.Point(32, 69);
+            this.label1.Location = new System.Drawing.Point(21, 48);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(242, 46);
             this.label1.TabIndex = 9;
@@ -270,7 +289,7 @@ namespace greeenEats
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.LimeGreen;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(111, 25);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(35, 35);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(71, 15);
             this.guna2HtmlLabel1.TabIndex = 8;
@@ -295,28 +314,6 @@ namespace greeenEats
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 1;
             this.guna2PictureBox1.TabStop = false;
-            // 
-            // staff_create_btn
-            // 
-            this.staff_create_btn.Animated = true;
-            this.staff_create_btn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.staff_create_btn.BorderThickness = 2;
-            this.staff_create_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.staff_create_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.staff_create_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.staff_create_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.staff_create_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.staff_create_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.staff_create_btn.ForeColor = System.Drawing.Color.White;
-            this.staff_create_btn.HoverState.FillColor = System.Drawing.Color.ForestGreen;
-            this.staff_create_btn.HoverState.ForeColor = System.Drawing.Color.White;
-            this.staff_create_btn.IndicateFocus = true;
-            this.staff_create_btn.Location = new System.Drawing.Point(32, 393);
-            this.staff_create_btn.Name = "staff_create_btn";
-            this.staff_create_btn.Size = new System.Drawing.Size(258, 31);
-            this.staff_create_btn.TabIndex = 25;
-            this.staff_create_btn.Text = "Create account";
-            this.staff_create_btn.Click += new System.EventHandler(this.staff_create_btn_Click);
             // 
             // staff_signup
             // 
