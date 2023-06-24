@@ -48,15 +48,15 @@ namespace greeenEats
 
             if (connector.OpenConnection())
             {
-                string enteredUsername = guna2TextBox1.Text;
-                string phoneNumber = guna2TextBox2.Text;
+                string enteredFirstName = guna2TextBox1.Text;
+                string enteredLastName = guna2TextBox2.Text;
                 string email = guna2TextBox3.Text;
                 string enteredPassword = guna2TextBox4.Text;
                 string confirmedPassword = guna2TextBox5.Text;
 
                 // Validate the input and check if passwords match
-                if (string.IsNullOrWhiteSpace(enteredUsername) ||
-                    string.IsNullOrWhiteSpace(phoneNumber) ||
+                if (string.IsNullOrWhiteSpace(enteredFirstName) ||
+                    string.IsNullOrWhiteSpace(enteredLastName) ||
                     string.IsNullOrWhiteSpace(email) ||
                     string.IsNullOrWhiteSpace(enteredPassword) ||
                     string.IsNullOrWhiteSpace(confirmedPassword))
@@ -71,10 +71,11 @@ namespace greeenEats
                 {
                     // Hash the password
                     string hashedPassword = HashPassword(enteredPassword);
-
+                    DateTime currentDateTime = DateTime.Now;
+                       
                     // Insert the user into the database
-                    string query = $"INSERT INTO users (username, phoneNumber, email, password) " +
-                                   $"VALUES ('{enteredUsername}', '{phoneNumber}', '{email}', '{hashedPassword}')";
+                    string query = $"INSERT INTO user (first_name, last_name, email, password, created_at, updated_at) " +
+                                   $"VALUES ('{enteredFirstName}', '{enteredLastName}', '{email}', '{hashedPassword}', {currentDateTime},{currentDateTime})";
 
                     MySqlCommand command = connector.CreateCommand(query);
                     int rowsAffected = command.ExecuteNonQuery();

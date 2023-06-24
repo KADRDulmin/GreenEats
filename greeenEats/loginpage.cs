@@ -49,13 +49,13 @@ namespace greeenEats
             {
                 // Connection successful, proceed with login verification
 
-                string enteredUsername = guna2TextBox1.Text;
+                string enteredEmail = guna2TextBox1.Text;
                 string enteredPassword = guna2TextBox2.Text;
 
                 // Hash the entered password
                 string hashedPassword = HashPassword(enteredPassword);
 
-                string query = $"SELECT COUNT(*) FROM users WHERE username = '{enteredUsername}' AND password = '{hashedPassword}'";
+                string query = $"SELECT COUNT(*) FROM user WHERE email= '{enteredEmail}' AND password = '{hashedPassword}'";
 
                 MySqlCommand command = connector.CreateCommand(query);
                 int count = Convert.ToInt32(command.ExecuteScalar());
