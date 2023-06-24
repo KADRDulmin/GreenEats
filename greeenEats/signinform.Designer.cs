@@ -177,7 +177,7 @@
             this.guna2TextBox3.Name = "guna2TextBox3";
             this.guna2TextBox3.PasswordChar = '\0';
             this.guna2TextBox3.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.guna2TextBox3.PlaceholderText = "Enter email";
+            this.guna2TextBox3.PlaceholderText = "Enter Your Email";
             this.guna2TextBox3.SelectedText = "";
             this.guna2TextBox3.Size = new System.Drawing.Size(258, 38);
             this.guna2TextBox3.TabIndex = 16;
@@ -203,7 +203,7 @@
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.guna2TextBox2.PlaceholderText = "Enter phone number ";
+            this.guna2TextBox2.PlaceholderText = "Enter Your Last Name";
             this.guna2TextBox2.SelectedText = "";
             this.guna2TextBox2.Size = new System.Drawing.Size(258, 38);
             this.guna2TextBox2.TabIndex = 15;
@@ -229,7 +229,7 @@
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.guna2TextBox1.PlaceholderText = "Create a username";
+            this.guna2TextBox1.PlaceholderText = "Enter Your First Name";
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.Size = new System.Drawing.Size(258, 38);
             this.guna2TextBox1.TabIndex = 14;
@@ -270,7 +270,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.LimeGreen;
-            this.label1.Location = new System.Drawing.Point(32, 69);
+            this.label1.Location = new System.Drawing.Point(17, 72);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(242, 46);
             this.label1.TabIndex = 9;
@@ -284,7 +284,7 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.LimeGreen;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(111, 25);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(32, 51);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(71, 15);
             this.guna2HtmlLabel1.TabIndex = 8;

@@ -82,5 +82,15 @@ namespace greeenEats
                 MessageBox.Show("Unable to establish a connection to the database. Please try again later.");
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
