@@ -148,7 +148,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label2.Location = new System.Drawing.Point(55, 464);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(40, 16);
             this.label2.TabIndex = 9;
             this.label2.Text = "EXIT";
             // 
@@ -230,7 +230,7 @@
             this.label1.ForeColor = System.Drawing.Color.LimeGreen;
             this.label1.Location = new System.Drawing.Point(32, 80);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(242, 46);
+            this.label1.Size = new System.Drawing.Size(303, 57);
             this.label1.TabIndex = 4;
             this.label1.Text = "GREEN EATS";
             this.label1.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -243,7 +243,7 @@
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.LimeGreen;
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(107, 31);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(71, 15);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(89, 18);
             this.guna2HtmlLabel1.TabIndex = 3;
             this.guna2HtmlLabel1.Text = "Welcome to,";
             this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
